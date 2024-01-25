@@ -1,5 +1,6 @@
 package com.example.demo.services;
 
+import com.example.demo.domains.City;
 import com.example.demo.domains.PublicTransports;
 import com.example.demo.repositories.PublicTransportationRepository;
 import org.springframework.stereotype.Service;
@@ -31,6 +32,5 @@ public class PublicTransportService<PublicTransport> {
    public List<PublicTransports> findAllPublicTransports(Long cityId){
         return publicTransportationRepository.findAllByCityId(cityId);
    }
-
 
 }

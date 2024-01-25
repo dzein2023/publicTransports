@@ -29,7 +29,7 @@ public class SecurityConfiguration {
     @Bean
     public UserDetailsService userDetailsService()
     {
-        // BCryptPasswordEncoder bCryptPasswordEncoder= new BCryptPasswordEncoder();
+        BCryptPasswordEncoder bCryptPasswordEncoder= new BCryptPasswordEncoder();
 
         UserDetails user1 = User.builder().username("user1")
                 .password(passwordEncoder().encode("123456"))//123456
